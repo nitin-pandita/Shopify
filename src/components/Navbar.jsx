@@ -54,7 +54,8 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 20vh;
+  min-height: 10vh;
+  padding: 1rem;
   margin: 0 40px;
   font-family: "Inter", sans-serif;
 `;

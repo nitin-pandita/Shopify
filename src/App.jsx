@@ -1,5 +1,5 @@
 import { Navbar, Footer, Content } from "./components/index";
-
+import style from "../src/App.css";
 function App() {
   return (
     <div>
