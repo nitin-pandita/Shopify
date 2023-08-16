@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "../image/logo.png";
 import { styled } from "styled-components";
 import { FaBookmark, FaShoppingCart, FaUserPlus } from "react-icons/fa";
+import { motion, useScroll } from "framer-motion";
 
 const Navbar = () => {
   return (

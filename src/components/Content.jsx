@@ -34,7 +34,7 @@ const ButtonStyled = styled(Button)`
 `;
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: auto;
   min-height: 80vh;
