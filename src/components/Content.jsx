@@ -3,7 +3,7 @@ import React from "react";
 import Image1 from "../image/image1.png";
 import Image2 from "../image/image2.png";
 import { styled } from "styled-components";
-import background from "../image/background.png";
+import { Button } from "@chakra-ui/react";
 const Content = () => {
   return (
     <Container>
@@ -15,6 +15,9 @@ const Content = () => {
           Build your business with Shopify to sell online, offline, <br /> and
           everywhere in between.
         </p>
+        <ButtonStyled colorScheme="blue" size="lg">
+          Explore Now
+        </ButtonStyled>
       </div>
       <div className="imageCollab">
         <ImagesFloat src={Image1} />
@@ -23,23 +26,30 @@ const Content = () => {
     </Container>
   );
 };
+const ButtonStyled = styled(Button)`
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 4rem;
+`;
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 40px;
+  align-items: center;
   width: auto;
   min-height: 80vh;
   padding: 0 4rem;
 
   .heading {
     h1 {
-      font-size: 90px;
-      line-height: 8rem;
+      font-size: 70px;
+      line-height: 6rem;
       font-weight: bold;
       opacity: 0.8;
     }
     p {
       font-size: 24px;
+      margin: 2rem 0;
     }
   }
   .imageCollab {
@@ -50,9 +60,9 @@ const Container = styled.div`
 `;
 const ImagesFloat = styled(Image)`
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateY(64%);
+  top: 30%;
+  left: 0%;
+  transform: translateX(74%);
 `;
 
 export default Content;
