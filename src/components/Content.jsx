@@ -20,8 +20,12 @@ const Content = () => {
         </ButtonStyled>
       </div>
       <div className="imageCollab">
-        <ImagesFloat src={Image1} />
-        <Image src={Image2} />
+        <div className="image1 imageSection">
+          <ImagesFloat src={Image1} />
+        </div>
+        <div className="image2 imageSection">
+          <Image src={Image2} />
+        </div>
       </div>
     </Container>
   );
@@ -56,6 +60,9 @@ const Container = styled.div`
     position: relative;
     width: 50%;
     overflow: hidden;
+    .imageSection {
+      background: rgba(0, 0, 0.3, 0.7);
+    }
   }
 `;
 const ImagesFloat = styled(Image)`

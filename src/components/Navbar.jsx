@@ -61,6 +61,9 @@ const Nav = styled.div`
   padding: 1rem;
   margin: 0 40px;
   font-family: "Inter", sans-serif;
+  .logo {
+    width: 100px;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -72,7 +75,7 @@ const NavLinks = styled.ul`
     a {
       display: flex;
       align-items: center;
-      font-size: 20px;
+      font-size: 17px;
       position: relative; /* Add this */
       text-decoration: none; /* Add this */
       color: #000; /* Change this to your desired text color */
